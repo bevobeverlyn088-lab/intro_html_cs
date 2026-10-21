@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #faebd7;
+            font-family: "Roboto Condensed", sans-serif;
+
+        }
+
+        form {
+            width: 28%;
+            border: 1px solid #0000ff;
+            padding: 16px;
+            margin: auto;
+        }
+
+         label {
+            color: #db07bb;
+        }
+
+        full-width {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+
+        button {
+            width: 100%;
+            border-color: #000000;
+            padding: 16px;
+            color: #7fffd4;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Form inputs texts,email,password,phone,date,radio button,checkbox,select     -->
+    <form>
+        <label for="Full name">First and last name</label>
+        <input type="text" name="Full name" id="Full name" placeholder="Enter your full name" required>
+
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="******" required>
+
+        <br>
+        <label for="phone">Phone</label>
+        <br>
+        <input type="tel" name="" id="phone" placeholder="0712345678">
+
+        <br>
+        <label for="dob">Date Of Birth</label>
+        <br>
+        <input class="full width" type="date" id="dob" required min="1940-01-01" max="2008-12-31">
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="food">Food</label>
+        <br>
+        <input type="checkbox" name="Foods" id="x" value="P001">
+        <label for="x">Pizza</label>
+        <br>
+        <input type="checkbox" name="Ugali" id="y">
+        <label for="y">Burger</label>
+        <br>
+
+        <label for="county">County</label>
+        <select class="full-width">
+            <select name="full width"></select>
+            <option value="Select County"></option>
+            <option value="nairobi">Nairobi</option>
+            <option value="nyeri">Nyeri</option>
+            <option value="mombasa">Mombasa</option>
+        </select>
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
